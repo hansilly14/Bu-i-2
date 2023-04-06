@@ -2,7 +2,7 @@ https://tuicocach.com/insertion-sort-thuat-toan-sap-xep-chen/
 #include <stdio.h>
 #include <math.h>
   
-/* Hàm sắp xếp sử dụng thuật toán sắp xếp chèn */
+
 void insertionSort(int arr[], int n)
 {
    int i, key, j;
@@ -10,10 +10,6 @@ void insertionSort(int arr[], int n)
    {
        key = arr[i];
        j = i-1;
-  
-       /* Di chuyển các phần tử có giá trị lớn hơn giá trị 
-       key về sau một vị trí so với vị trí ban đầu
-       của nó */
        while (j >= 0 && arr[j] > key)
        {
            arr[j+1] = arr[j];
@@ -23,16 +19,13 @@ void insertionSort(int arr[], int n)
    }
 }
   
-/* Hàm xuất mảng */
+
 void printArray(int arr[], int n)
 {
    for (int i=0; i < n; i++)
        printf("%d ", arr[i]);
    printf("\n");
 }
-  
-  
-  
   
 int main()
 {
