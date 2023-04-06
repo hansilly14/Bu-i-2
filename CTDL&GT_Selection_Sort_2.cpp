@@ -7,7 +7,6 @@ void swap(int &a, int &b)
     a=b;
     b=temp;
 }
-//Hàm sắp xếp chọn (selection Sort)
 void selectionSort(int arr[], int n)
 {
     for (int i = 0; i < n-1; i++)
@@ -15,15 +14,12 @@ void selectionSort(int arr[], int n)
       int min_index = i;
       for (int j = i+1; j < n; j++)
       {
-//Tìm vị trí phần tử nhỏ nhất
         if(arr[min_index] > arr[j])
          min_index = j;
       }
-  // Đổi chỗ phần tử nhỏ nhất với phần tử đầu tiên
         swap(arr[i], arr[min_index]);
     }
 }
-//Hàm xuất mảng
 void printArray(int arr[], int size)
 {
     int i;
