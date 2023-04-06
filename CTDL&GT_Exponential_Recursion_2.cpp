@@ -4,24 +4,24 @@ https://freetuts.net/de-quy-da-tuyen-exponential-recursion-2958.html
 using namespace std;
 void dayNhiPhan(int i, int n, int *X)
 {
-    int val;    // val là các giá trị có thể gán cho các vị trí trong x
-    for (val = 0; val < 2; val++)      // val có thể nhận hai giá trị là 0 và 1
+    int val;    x
+    for (val = 0; val < 2; val++)      
     {
         X[i] = val;
   
-        if (i == (n-1))         // nếu i là phần tử cuối của dãy
+        if (i == (n-1))        
         {
             int j;
-            for(j = 0; j < n; j ++)         // thì tin ra nhị phân mới tìm được
+            for(j = 0; j < n; j ++)     
             {
                 cout<<X[j];
             }
             cout<<"\n";
         }
   
-        else              // nếu i chưa phải là phần tử cuối thì gán cho i sau là i+1.
+        else              .
         {
-            dayNhiPhan(i+1, n, X); // gọi đệ quy tiếp tục thực hiện hàm
+            dayNhiPhan(i+1, n, X);
         }
     }
 }
