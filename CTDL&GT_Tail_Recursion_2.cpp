@@ -18,6 +18,4 @@ int main() {
   cin>>n;
   kq = UCLN(m,n);
   cout<<"Kết quả: "<<kq;
-  cout<<"\n--------------------------\n";
-  cout<<"Chương trình này được đăng tại Freetuts.net";
 }
