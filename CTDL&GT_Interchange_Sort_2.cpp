@@ -1,17 +1,17 @@
 https://laptrinhtudau.com/bai-tap-thuat-toan-sap-xep-doi-cho-truc-tiep-interchange-sort-trong-c/
 #include <stdio.h>
-void Nhap(int a[],int n){//ham nhap mang
+void Nhap(int a[],int n){
     for(int i=0; i<n; i++){
         printf("\nNhap a[%d]=",i);
         scanf("%d",&a[i]);
     }
 }
-void Xuat(int a[],int n){//ham xuat mang
+void Xuat(int a[],int n){
     for(int i=0; i<n; i++){
         printf("%d \t",a[i]);
     }
 }
-void InterchangeSort(int a[], int n){//thuat toan doi cho truc tiep
+void InterchangeSort(int a[], int n){
     for(int i=0 ; i<n-1 ; i++){
         for(int j=i+1; j<n ; j++){
             if(a[i]>a[j]){
