@@ -1,3 +1,4 @@
+https://laptrinhtudau.com/bai-tap-thuat-toan-sap-xep-doi-cho-truc-tiep-interchange-sort-trong-c/
 #include <stdio.h>
 void Nhap(int a[],int n){//ham nhap mang
     for(int i=0; i<n; i++){
